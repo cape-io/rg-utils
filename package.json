@@ -3,12 +3,20 @@
   "version": "1.0.1",
   "description": "Tools and utilities for R&G + D&L item processing.",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Kai Curry <kai@cape.io> (http://www.cape.io/)",
   "license": "ISC",
   "type": "module",
+  "exports": "./index.js",
+  "publishConfig": {"access": "public"},
   "repository": {
     "type": "git",
     "url": "git://github.com/cape-io/rg-utils.git"

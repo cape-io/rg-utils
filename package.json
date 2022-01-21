@@ -1,0 +1,27 @@
+{
+  "name": "@cape-io/rg-utils",
+  "version": "1.0.0",
+  "description": "Tools and utilities for R&G + D&L item processing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cape-io/rg-utils.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "understory": "^2.0.2"
+  }
+}

@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -24,6 +24,7 @@
     "url": "git://github.com/cape-io/rg-utils.git"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.7.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",

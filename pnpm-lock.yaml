@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  cross-env: ^7.0.3
   eslint: ^8.7.0
   eslint-config-airbnb-base: ^15.0.0
   eslint-plugin-import: ^2.25.4
@@ -17,6 +18,7 @@ dependencies:
   understory: 2.0.2
 
 devDependencies:
+  cross-env: 7.0.3
   eslint: 8.7.0
   eslint-config-airbnb-base: 15.0.0_9ff7dbcc486b497d34e34a545c49272a
   eslint-plugin-import: 2.25.4_eslint@8.7.0
@@ -1046,6 +1048,14 @@ packages:
     engines: {node: '>=4.0.0'}
     dependencies:
       lodash.get: 4.4.2
+    dev: true
+
+  /cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/7.0.3:

@@ -11,3 +11,5 @@ Tools and utilities for R&G + D&L item ID and Category processing.
 * String must start with a valid `patternId` or it will not be processed.
 * `otherId` is joined with underscore.
 * `hasValidIdChars()` uses a regex expression to check if the id is in a known format.
+* Pattern numbers over 9 are allowed.
+* DL patternId prefix can have hyphen or not. Does not force to have or not.

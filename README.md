@@ -3,7 +3,7 @@
 Tools and utilities for R&G + D&L item processing.
 
 - `getItemIdParts(itemId)` Parsing of item id into an object `{ patternId, colorId, otherId, invalidId: Boolean }`
-- Establishing category.`
+- `getCategoryFromPattern({ categories: { drapery: {patternIds: ['id1']}}})` Establishing category.
 
 ## Changes/Notes
 

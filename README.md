@@ -1,6 +1,6 @@
 # rg-utils
 
-Tools and utilities for R&G + D&L item processing.
+Tools and utilities for R&G + D&L item ID and Category processing.
 
 - `getItemIdParts(itemId)` Parsing of item id into an object `{ patternId, colorId, otherId, invalidId: Boolean }`
 - `getCategoryFromPattern({ categories: { drapery: {patternIds: ['id1']}}})` Establishing category.

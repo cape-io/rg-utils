@@ -34,6 +34,7 @@
     "jest": "^27.4.7"
   },
   "dependencies": {
+    "crockford-base32-number": "^1.0.3",
     "lodash": "^4.17.21",
     "prairie": "^4.0.0",
     "understory": "^2.0.2"

@@ -4,7 +4,7 @@ Tools and utilities for R&G + D&L item ID and Category processing.
 
 ## ID Processing
 
-* `getItemIdParts(itemId)` Parsing of item id into an object `{ patternId, colorId, otherId, invalidId: Boolean }`
+* `getItemIdInfo(itemId)` Parsing of itemId into an object `{ patternId, colorId, otherId, invalidId: Boolean }`
 * String must start with a valid `patternId` or it will not be processed.
 * Pattern numbers over 9 are allowed. Pattern must have three or more letter chars.
 * Double colorId will be turned into `01|02`. Able to parse as `01/02`, `01_02`, or `01-02`. Will mark as invalidId if used `_` or `/`.

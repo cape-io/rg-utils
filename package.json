@@ -26,12 +26,12 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "^8.8.0",
+    "eslint": "^8.17.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
-    "jest": "^27.4.7"
+    "jest": "^27.5.1"
   },
   "dependencies": {
     "crockford-base32-number": "^1.0.3",

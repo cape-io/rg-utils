@@ -2,6 +2,18 @@
 
 Tools and utilities for R&G + D&L item ID and Category processing.
 
+## ID Requirements
+
+**{prefix}-{patternId}-{colorId}**
+
+Prefer using a `patternSeparator` (`-`) between `prefix` and `patternId` when creating new prefix options.
+
+Options are defined in `lib/cat-ids.js`. 
+
+* `prefix` valid options are [null, p, l, dl, dli, dlt, pf, pft, pfi]. Max of 16 options including `null` (textile). 4 bits.
+* `patternId` NUMBER must be less than 16777215. 24 bits.
+* `colorId` NUMBER must be less than 64. 6 bits.
+
 ## ID Processing
 
 * `getItemIdInfo(itemId)` Parsing of itemId into an object `{ patternId, colorId, otherId, invalidId: Boolean }`

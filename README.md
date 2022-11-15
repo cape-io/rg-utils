@@ -45,3 +45,6 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 - colorId = 7
 - prefix = 3
 
+## Changelog
+
+- 4.x Allows colorIds from 63 to 99.

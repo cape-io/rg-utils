@@ -12,7 +12,7 @@ Options are defined in `lib/cat-ids.js`.
 
 * `prefix` valid options are [null, p, l, dl, dli, dlt, pf, pft, pfi]. Max of 16 options including `null` (textile). 4 bits.
 * `patternId` NUMBER must be less than 16777215. 24 bits.
-* `colorId` NUMBER must be less than 64. 6 bits.
+* `colorId` NUMBER must be less than 99. Note this is smaller than the 7 bit max of 127.
 
 ## ID Processing
 
@@ -29,12 +29,19 @@ Options are defined in `lib/cat-ids.js`.
 - `getCategoryFromPattern({ categories: { drapery: {patternIds: ['id1']}}})(item)` Establishing category. Item needs `patternId` and optionally a `category` field.
 
 ## ID Number
-style = 7 bits (127)
-sourceNum = 9 bits (511) Assume 489 is min for 5 length and higher?
-length = 2 bits 0:4, 1:5, 2:6, 3:7
 
-27 bits
-source = 11 sourceNum | length
-style = 7
-colorId = 6
-prefix = 3
+If under 14 bits just use the number 16384.
+
+Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. How to compress out the zeros?
+
+910003 = source 910, size 6, style 3
+
+
+### 28 bits
+- source = 11 sourceNum | length
+    - sourceNum = 9 bits (511) Assume 489 is min for 5 length and higher?
+    - length = 2 bits 0:4, 1:5, 2:6, 3:7
+- style = 7 bits (127) Assume it's 99 or smaller
+- colorId = 7
+- prefix = 3
+

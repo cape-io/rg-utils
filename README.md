@@ -8,9 +8,9 @@ Tools and utilities for R&G + D&L item ID and Category processing.
 
 Prefer using a `patternSeparator` (`-`) between `prefix` and `patternId` when creating new prefix options.
 
-Options are defined in `lib/cat-ids.js`. 
+Options are defined in `lib/cat-ids.js`.
 
-* `prefix` valid options are [null, p, l, dl, dli, dlt, pf, pft, pfi]. Max of 16 options including `null` (textile). 4 bits.
+* `prefix` valid options are [null, rg, p, l, dl, dli, dlt, pf, pft, pfi]. Max of 16 options including `null` (textile). 4 bits.
 * `patternId` NUMBER must be less than 16777215. 24 bits.
 * `colorId` NUMBER must be **less** than 99. Note this is smaller than the 7 bit max of 127. We assume it always two digits/chars long. Id 99 is reserved for color items that are the same as (wire/sample) the pattern.
 

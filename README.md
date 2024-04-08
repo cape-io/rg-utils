@@ -45,6 +45,12 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 - colorId = 7
 - prefix = 3
 
+## ColorItem <-> Pattern
+
+* `categoryId` is a property of colorItem based on `pattern.category`. Used for searches.
+
 ## Changelog
 
 - 4.x Allows colorIds from 63 to 99.
+
+`npm run up` to update field & category data.

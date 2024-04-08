@@ -8,6 +8,9 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "info": "curl -o lib/info.js https://api.rogersandgoffigon.com/info",
+    "info-ex": "sed -i.old '1s;^;export default ;' lib/info.js",
+    "up": "npm run info && npm run info-ex",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "engines": {

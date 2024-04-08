@@ -589,7 +589,7 @@ export const validIds = [
   'pf8001',
   'pf9002',
   'pf9005',
-  'pft104',
+  'rg104',
 ]
 export const invalidIds = [
   '4plmat',

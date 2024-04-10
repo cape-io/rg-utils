@@ -1,6 +1,6 @@
 {
   "name": "@cape-io/rg-utils",
-  "version": "4.6.0",
+  "version": "4.7.0",
   "description": "Tools and utilities for R&G + D&L item processing.",
   "main": "index.js",
   "directories": {

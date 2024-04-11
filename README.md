@@ -56,6 +56,7 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 
 ## Changelog
 
+- 5.x Includes fields and categories as code.
 - 4.x Allows colorIds from 63 to 99.
 
 `npm run up` to update field & category data.

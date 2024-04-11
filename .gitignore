@@ -4,5 +4,5 @@ npm-debug.log
 yarn-error.log
 dist
 lib/info.json
-lib/info.js
-lib/info.js.old
+lib/info-*.js
+lib/info-*.js.old

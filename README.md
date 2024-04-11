@@ -49,11 +49,14 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 
 * `categoryId` is a property of colorItem based on `pattern.category`. Used for searches.
 
+## Notes
+
+* `appId` is the web application id.
+* `appCode` is the backend data feed application code.
+
 ## Changelog
 
 - 4.x Allows colorIds from 63 to 99.
 
 `npm run up` to update field & category data.
 
-## @TODO
-* remove simplesearch from info update (rg-obj) source.

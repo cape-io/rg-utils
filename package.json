@@ -8,10 +8,12 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "info": "curl -o lib/info.js https://api.rogersandgoffigon.com/info",
-    "info-ex": "sed -i.old '1s;^;export default ;' lib/info.js",
-    "up": "npm run info && npm run info-ex",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
+    "fields": "curl -o lib/info-fields.js https://data.rogersandgoffigon.com/info/fields.json",
+    "fields-ex": "sed -i.old '1s;^;export default ;' lib/info-fields.js",
+    "cats": "curl -o lib/info-cats.js https://data.rogersandgoffigon.com/info/categories.json",
+    "cats-ex": "sed -i.old '1s;^;export default ;' lib/info-cats.js",
+    "up": "npm run fields && npm run fields-ex && npm run cats && npm run cats-ex",
+    "test": "npm run up && cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "engines": {
     "node": ">=16.0.0"

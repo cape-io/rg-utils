@@ -16,4 +16,4 @@ examples/
 yarn.lock
 ids.js
 lib/_pattern.js
-lib/info.js.old
+lib/*.js.old

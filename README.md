@@ -52,7 +52,7 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 ## Notes
 
 * `appId` is the web application id.
-* `appCode` is the backend data feed application code.
+* `appCode` is the backend data feed application code. Should really be `dataFeedCode` or something like that.
 
 ## Changelog
 

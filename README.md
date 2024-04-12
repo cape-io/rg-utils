@@ -56,6 +56,7 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 
 ## Changelog
 
+- v5.4.0 pager data
 - 5.x Includes fields and categories as code.
 - 4.x Allows colorIds from 63 to 99.
 

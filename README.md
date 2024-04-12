@@ -56,6 +56,7 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 
 ## Changelog
 
+- v6.0.1 `dl` prefix items are not always `textile`.
 - v6.0.0 `getCategory(item)` no longer send categories to it first, just item.
 - v5.4.0 pager data
 - 5.x Includes fields and categories as code.

@@ -26,7 +26,7 @@ Options are defined in `lib/cat-ids.js`.
 
 ## Category Processing
 
-- `getCategoryFromPattern({ categories: { drapery: {patternIds: ['id1']}}})(item)` Establishing category. Item needs `patternId` and optionally a `category` field.
+Primary categories in the data should be `fabric`, `trim`, `accessory`.
 
 ## ID Number
 

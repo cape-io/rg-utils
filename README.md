@@ -16,7 +16,7 @@ Options are defined in `lib/cat-ids.js`.
 
 ## ID Processing
 
-* `getItemIdInfo(itemId)` Parsing of itemId into an object `{ patternId, colorId, otherId, invalidId: Boolean }`
+* `getItemIdInfo(itemItemNumber)` Parsing of itemId into an object `{ patternId, colorId, otherId, invalidId: Boolean }`
 * String must start with a valid `patternId` or it will not be processed.
 * Pattern numbers over 9 are allowed. Pattern must have three or more letter chars.
 * Double colorId will be turned into `01|02`. Able to parse as `01/02`, `01_02`, or `01-02`. Will mark as invalidId if used `_` or `/`.
@@ -55,8 +55,11 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 * `appCode` is the backend data feed application code. Should really be `dataFeedCode` or something like that.
 
 ## Changelog
+### v7
+- Remove extra junk.
 
 ### v6
+- 6.1 Return `simpleSearch` prop on parse.
 - Switch all instances of `patternNumber` to `patternInt`.
 - `dl` prefix items are not always `textile`.
 - `getCategory(item)` no longer send categories to it first, just item.

@@ -56,6 +56,7 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 
 ## Changelog
 ### v7
+- added `fixItemId(itemNumber) -> itemId`
 - Remove extra junk.
 
 ### v6

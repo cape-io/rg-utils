@@ -47,7 +47,7 @@ Need to fit into smaller than 24 bits. Larger numbers almost always have zeros. 
 
 ## ColorItem <-> Pattern
 
-* `categoryId` is a property of colorItem based on `pattern.category`. Used for searches.
+* `categoryId` is a property of colorItem based on `pattern.categoryId`. Used for searches.
 
 ## Notes
 
